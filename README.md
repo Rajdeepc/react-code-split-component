@@ -1,68 +1,83 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Code Splitting Components with React
 
-## Available Scripts
+This project is built to help understand how to code split child components to optimize performance in React Web apps with create-react-app
 
-In the project directory, you can run:
+### Project Description:
+ * App Component
+    In this page there is a button and a modal. On Click of the button the modal should be shown. The logic is to not to render the modal.js until the button is clicked
 
-### `npm start`
+* Modal Component
+    Displays the modal component
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Getting Started
+To get you started you can simply clone the repository:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```
+git clone https://github.com/Rajdeepc/react-code-split-component.git
+```
 
-### `npm test`
+### Prerequisites
+You need git to clone the repository. You can get git from
+[http://git-scm.com/](http://git-scm.com/).
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A number of node.js tools is necessary to initialize and test the project. You must have node.js and its package manager (npm) installed. You can get them from  [http://nodejs.org/](http://nodejs.org/).
 
-### `npm run build`
+### Installing
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+and install the dependencies
+```
+npm install
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### Lint & Build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm run lint
+npm run build
+```
 
-### `npm run eject`
+### Run in Local
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To Run Locally Steps to follow:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+### Built With
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* [React js](https://github.com/facebook/react/)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Create a branch
 
-### Code Splitting
+1. `git checkout master` from any folder in your local `https://github.com/Rajdeepc/react-code-split-component.git` repository
+1. `git pull origin master` to ensure you have the latest main code
+1. `git checkout -b the-name-of-my-branch` (replacing `the-name-of-my-branch` with a suitable name) to create a branch
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Make the change
 
-### Analyzing the Bundle Size
+1. Follow the "Running locally" instructions
+1. Save the files and check in the browser
+  1. Changes to React components in `src` will hot-reload
+  1. Changes to markdown files in `content` will hot-reload
+  1. If working with plugins, you may need to remove the `.cache` directory and restart the server
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+### Push it
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+1. `git add -A && git commit -m "My message"` (replacing `My message` with a commit message, such as `Fixed header logo`) to stage and commit your changes
+1. `git push my-fork-name the-name-of-my-branch`
+1. Go to the [react-code-split-component](https://github.com/Rajdeepc/react-code-split-component.git) and you should see recently pushed branches.
+1. Follow GitHub's instructions.
+1. If possible, include screenshots of visual changes. A Netlify build will also be automatically created once you make your PR so other people can see your change.
 
-### Advanced Configuration
+### Compare Page:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## App Component which doesn't render the Modal Component on Load
+![App](appComponent.png)
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Modal Component which loads once user clicks on the button
+![App](CodeSplittedModal.png)
