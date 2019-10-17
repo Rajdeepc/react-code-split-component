@@ -42,7 +42,6 @@ To Run Locally Steps to follow:
 
 ```
 npm start
-
 ```
 ### Built With
 
@@ -79,5 +78,5 @@ npm start
 ## App Component which doesn't render the Modal Component on Load
 ![App](appComponent.png)
 
-## Modal Component which loads once user clicks on the button
+## Modal Component which loads once user clicks on the button. See 2.chunk.js
 ![App](CodeSplittedModal.png)
